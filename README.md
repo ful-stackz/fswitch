@@ -1,4 +1,4 @@
-# fswitch 
+# func-switch 
 
 _**The cleaner, functional switch.**_
 
@@ -9,8 +9,8 @@ Here are some comparisons of doing the same thing with vanilla JavaScript and wi
 ### Returning values
 
 ```javascript
-// fswitch
-import $switch from 'fswitch'
+// func-switch
+import $switch from 'func-switch'
 
 const monthToString = (month) => $switch(month)
   .when(0, () => 'January')
@@ -44,8 +44,8 @@ Sometimes you just want to switch over a value and handle a couple different cas
 returning a value in the end. All you need to do that is omit the `.match()` at the end.
 
 ```typescript
-// fswitch
-import $switch from 'fswitch'
+// func-switch
+import $switch from 'func-switch'
 
 // Handling a Vuex store subscription
 $store.subscribe((mutation, state) => $switch([mutation.type, state.user.id !== -1])

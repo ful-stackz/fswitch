@@ -1,5 +1,5 @@
 {
-  "name": "fswitch",
+  "name": "func-switch",
   "version": "0.0.1",
   "description": "The cleaner, functional switch.",
   "main": "dist/index.js",
@@ -10,6 +10,10 @@
     "prepublish": "tsc && npm run test",
     "test": "mocha \"**/*.test.ts\" --config ./.mocharc.json",
     "test:watch": "npm run test -- --watch"
+  },
+  "homepage": "https://ful-stackz.github.io/func-switch/index.html",
+  "repository": {
+    "url": "https://github.com/ful-stackz/func-switch/"
   },
   "author": "Ivan Stoyanov",
   "license": "MIT",
