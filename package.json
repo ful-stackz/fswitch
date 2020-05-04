@@ -1,0 +1,25 @@
+{
+  "name": "fswitch",
+  "version": "0.0.1",
+  "description": "The cleaner, functional switch.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test",
+    "prepublish": "tsc && npm run test",
+    "test": "mocha \"**/*.test.ts\" --config ./.mocharc.json",
+    "test:watch": "npm run test -- --watch"
+  },
+  "author": "Ivan Stoyanov",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "nyc": "^15.0.1",
+    "ts-node": "^8.9.1",
+    "typescript": "^3.8.3"
+  }
+}
