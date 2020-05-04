@@ -47,7 +47,7 @@ returning a value in the end. All you need to do that is omit the `.match()` at 
 // fswitch
 import $switch from 'fswitch'
 
-// Handling a Vuex store subscriptiob
+// Handling a Vuex store subscription
 $store.subscribe((mutation, state) => $switch([mutation.type, state.user.id !== -1])
   .when([['SET_USER', true], ['LOAD_USER', true]], () => {
     $router.push({ name: 'Home' })
