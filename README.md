@@ -2,7 +2,14 @@
 
 _**The cleaner, functional switch.**_
 
-## Usage
+## Table of contents
+
+- [Basic usage](#basic-usage)
+  - [Returning values](#returning-values)
+  - [Producing side effects](#producing-side-effects)
+- [More documentation](#more-documentation)
+
+## Basic usage
 
 Here are some comparisons of doing the same thing with vanilla JavaScript and with `fswitch`.
 
@@ -73,3 +80,7 @@ const handleUpdate = ({ type, state: { user: id } }) => {
   }
 }
 ```
+
+## More documentation
+
+Find more documentation and examples at [func-switch/wiki](https://github.com/ful-stackz/func-switch/wiki)
